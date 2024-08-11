@@ -57,4 +57,4 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`,Fm=()=>Ge.jsxs(Mm,{children:[Ge.jsx(Dm,{}),Ge.jsx($m,{width:"24",height:"24"})]});function jm(){return Ge.jsx(Rm,{children:Ge.jsx(Fm,{})})}Xo.createRoot(document.getElementById("root")).render(Ge.jsx(En.StrictMode,{children:Ge.jsx(jm,{})}));
+`,Fm=()=>Ge.jsxs(Mm,{children:[Ge.jsx(Dm,{}),Ge.jsx($m,{width:24,height:24})]});function jm(){return Ge.jsx(Rm,{children:Ge.jsx(Fm,{})})}Xo.createRoot(document.getElementById("root")).render(Ge.jsx(En.StrictMode,{children:Ge.jsx(jm,{})}));
