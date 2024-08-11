@@ -1,10 +1,11 @@
-import "./App.css";
+import { HeaderWrapper } from "./App.styled";
+import { Header } from "./components/Header/Header";
 
 function App() {
   return (
-    <div>
-      <p>test</p>
-    </div>
+    <HeaderWrapper>
+      <Header />
+    </HeaderWrapper>
   );
 }
 
