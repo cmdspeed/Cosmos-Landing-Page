@@ -2,10 +2,8 @@ import icons from "../../../assets/icon/icons.svg";
 
 export const Burger = () => {
   return (
-    <div>
-      <svg>
-        <use href={`${icons}#burger`} />
-      </svg>
-    </div>
+    <svg width={24} height={24}>
+      <use href={`${icons}#burger`} />
+    </svg>
   );
 };
