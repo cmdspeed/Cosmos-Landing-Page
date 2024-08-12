@@ -1,4 +1,4 @@
-import icon from "../../assets/icon/icon.svg";
+import icons from "../../assets/icon/icon.svg";
 import { BurgerSvg } from "./BurgerIcon.styled";
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 export const BurgerIcon = ({ width, height, onClick }: Props) => {
   return (
     <BurgerSvg width={width} height={height} onClick={onClick}>
-      <use href={`${icon}#burger2`} />
+      <use href={`${icons}#burger2`} />
     </BurgerSvg>
   );
 };
