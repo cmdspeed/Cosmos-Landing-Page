@@ -21,10 +21,36 @@ export const HeroContainer = styled.section`
     background-image: url(${herobgx1.replace("x1", "x2")});
   }
 `;
-export const HeroContent = styled.div``;
-export const HeroImage = styled.img``;
+
+export const HeroContent = styled.div`
+  position: relative;
+`;
+
+export const HeroGirl = styled.img``;
+
 export const HeroTitle = styled.h1`
   font-size: 2rem;
   max-width: 18.93rem;
-  padding: 2rem 3rem 2rem 1.5rem;
+  padding: 2rem 3rem 1.5rem 1.5rem;
+`;
+
+export const GirlShadow = styled.div`
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  border-radius: 50%;
+  width: 121px;
+  height: 300px;
+  background: #63757c;
+  opacity: 0.8;
+  filter: blur(3rem);
+
+  z-index: -1;
+`;
+
+export const GirlContainer = styled.div`
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
 `;
