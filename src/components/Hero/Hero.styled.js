@@ -45,7 +45,7 @@ export const GirlShadow = styled.div`
   opacity: 0.8;
   filter: blur(3rem);
 
-  z-index: -1;
+  z-index: -2;
 `;
 
 export const GirlContainer = styled.div`
