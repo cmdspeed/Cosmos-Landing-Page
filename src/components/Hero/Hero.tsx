@@ -7,6 +7,7 @@ import {
   GirlContainer,
 } from "./Hero.styled";
 import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
+import { Diagram } from "./Diagram/Diagram";
 
 export const Hero = () => {
   return (
@@ -18,6 +19,7 @@ export const Hero = () => {
         <GirlShadow></GirlShadow>
         <HeroGirl src={`${spacegirlx1}`} />
       </GirlContainer>
+      <Diagram />
     </HeroContainer>
   );
 };
