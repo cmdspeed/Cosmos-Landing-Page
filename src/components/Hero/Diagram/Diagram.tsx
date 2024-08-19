@@ -9,22 +9,39 @@ import {
 
 import icon from "../../../assets/icon/icon.svg";
 
-export const Diagram = () => {
+interface GraphProps {
+  width: string;
+  height: string;
+  iconName: string;
+}
+
+interface DiagramProps {
+  title: string;
+  svgTitle: string;
+  graph: GraphProps[];
+}
+
+export const Diagram = ({ svgTitle, title, graph }: DiagramProps) => {
+  console.log(graph);
+
   return (
     <DiagramWrapper>
       <DiagramElement>
         <DiagramSvg>
-          <use href={`${icon}#graph1`} />
+          <use href={`${icon}${svgTitle}`} />
         </DiagramSvg>
-        <DiagramTitle>Spacewalks</DiagramTitle>
+        <DiagramTitle>{title}</DiagramTitle>
       </DiagramElement>
       <GraphWrapper>
-        <GraphSvg width="95px" height="49px">
-          <use href={`${icon}#graph2`} />
-        </GraphSvg>
-        <GraphSvg width="47px" height="47px">
-          <use href={`${icon}#graph3`} />
-        </GraphSvg>
+        {graph.map((graph) => (
+          <GraphSvg
+            key={graph.iconName}
+            width={graph.width}
+            height={graph.height}
+          >
+            <use href={`${icon}#${graph.iconName}`} />
+          </GraphSvg>
+        ))}
       </GraphWrapper>
     </DiagramWrapper>
   );

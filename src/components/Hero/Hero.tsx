@@ -19,7 +19,14 @@ export const Hero = () => {
         <GirlShadow></GirlShadow>
         <HeroGirl src={`${spacegirlx1}`} />
       </GirlContainer>
-      <Diagram />
+      <Diagram
+        svgTitle="#graph1"
+        title="Spacewalks"
+        graph={[
+          { width: "95px", height: "49px", iconName: "graph2" },
+          { width: "47px", height: "47px", iconName: "graph3" },
+        ]}
+      />
     </HeroContainer>
   );
 };
