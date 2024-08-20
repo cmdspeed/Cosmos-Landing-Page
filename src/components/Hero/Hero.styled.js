@@ -54,3 +54,19 @@ export const GirlContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
 `;
+
+export const DiagramContainer = styled.div`
+  display: flex;
+  margin: 8.1875rem auto;
+  position: absolute;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: max-content;
+
+  & > div:first-of-type {
+    margin-top: 4.875rem;
+    margin-right: 0.375rem;
+  }
+`;
