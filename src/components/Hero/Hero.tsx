@@ -7,8 +7,10 @@ import {
   GirlContainer,
   DiagramContainer,
 } from "./Hero.styled";
-import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
 import { Diagram } from "./Diagram/Diagram";
+
+import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
+import spacegirlx2 from "../../assets/images/Hero/space-girl@x2.png";
 
 export const Hero = () => {
   return (
@@ -18,7 +20,11 @@ export const Hero = () => {
       </HeroContent>
       <GirlContainer>
         <GirlShadow></GirlShadow>
-        <HeroGirl src={`${spacegirlx1}`} />
+        <HeroGirl
+          src={`${spacegirlx1}`}
+          srcSet={`${spacegirlx2} 2x`}
+          alt="Space Girl"
+        />
       </GirlContainer>
       <DiagramContainer>
         <Diagram
