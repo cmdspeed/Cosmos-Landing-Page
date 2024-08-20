@@ -27,6 +27,11 @@ export const Hero = () => {
           { width: "47px", height: "47px", iconName: "graph3" },
         ]}
       />
+      <Diagram
+        svgTitle="#graph4"
+        title="Exercising"
+        graph={[{ width: "125px", height: "29px", iconName: "graph5" }]}
+      />
     </HeroContainer>
   );
 };
