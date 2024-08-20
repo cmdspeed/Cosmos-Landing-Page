@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import herobgx1 from "../../assets/images/Hero/herobg@x1.jpg";
+import herobgx2 from "../../assets/images/Hero/herobg@x2.jpg";
 
 export const HeroContainer = styled.section`
   margin: 1.625rem auto;
@@ -18,7 +19,7 @@ export const HeroContainer = styled.section`
     only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
-    background-image: url(${herobgx1.replace("x1", "x2")});
+    background-image: url(${herobgx2});
   }
 `;
 
