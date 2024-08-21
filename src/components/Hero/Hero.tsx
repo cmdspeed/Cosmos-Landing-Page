@@ -6,6 +6,7 @@ import {
   GirlShadow,
   GirlContainer,
   DiagramContainer,
+  TimerInSpace,
 } from "./Hero.styled";
 import { Diagram } from "./Diagram/Diagram";
 
@@ -39,10 +40,17 @@ export const Hero = () => {
           svgTitle="#graph4"
           title="Exercising"
           graph={[
-            { width: "7.8125rem", height: "1.8125rem", iconName: "graph5" },
+            { width: "7.7156rem", height: "1.8125rem", iconName: "graph5" },
           ]}
         />
       </DiagramContainer>
+      <TimerInSpace
+        svgTitle="#timeIcon"
+        title="Total time in space "
+        bgColor="--bg-color-diagram"
+      >
+        <span> 352D 5H 49M 20S</span>
+      </TimerInSpace>
     </HeroContainer>
   );
 };

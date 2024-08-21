@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import herobgx1 from "../../assets/images/Hero/herobg@x1.jpg";
 import herobgx2 from "../../assets/images/Hero/herobg@x2.jpg";
+import { Diagram } from "./Diagram/Diagram";
 
 export const HeroContainer = styled.section`
   margin: 1.625rem auto;
@@ -71,3 +72,5 @@ export const DiagramContainer = styled.div`
     margin-right: 0.375rem;
   }
 `;
+
+export const TimerInSpace = styled(Diagram)``;

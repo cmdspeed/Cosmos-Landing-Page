@@ -24,10 +24,15 @@ export const GraphSvg = styled.svg`
     margin-right: 0;
   }
 `;
+interface DiagramWrapperProps {
+  bgColor?: string;
+}
 
-export const DiagramWrapper = styled.div`
-  background-color: var(--main-text-color);
-  color: var(--dark-text-color);
+export const DiagramWrapper = styled.div<DiagramWrapperProps>`
+  background-color: ${({ bgColor }) =>
+    bgColor ? `var(${bgColor})` : `var(--main-text-color)`};
+  color: ${({ bgColor }) =>
+    bgColor ? "var(--main-text-color)" : "var(--dark-text-color)"};
 
   max-width: 10.75rem;
   max-height: 7.31rem;
