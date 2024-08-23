@@ -44,12 +44,14 @@ export const Hero = () => {
           ]}
         />
       </DiagramContainer>
-      <TimerInSpace
-        svgTitle="#timeIcon"
-        title="Total time in space "
-        bgColor="--bg-color-diagram"
-      >
-        <span> 352D 5H 49M 20S</span>
+      <TimerInSpace>
+        <Diagram
+          svgTitle="#timeIcon"
+          title="Total time in space "
+          bgColor="--bg-color-diagram"
+        >
+          <span> 352D 5H 49M 20S</span>
+        </Diagram>
       </TimerInSpace>
     </HeroContainer>
   );
