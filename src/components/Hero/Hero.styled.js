@@ -3,7 +3,7 @@ import herobgx1 from "../../assets/images/Hero/herobg@x1.jpg";
 import herobgx2 from "../../assets/images/Hero/herobg@x2.jpg";
 
 export const HeroContainer = styled.section`
-  margin: 1.625rem auto;
+  margin: 1.625rem auto 18.5rem;
   background-image: url(${herobgx1});
   background-size: cover;
   min-height: 23.812rem;
@@ -61,7 +61,7 @@ export const DiagramContainer = styled.div`
   margin: 8.1875rem auto;
   position: absolute;
   display: flex;
-  position: absolute;
+
   left: 0;
   right: 0;
   width: max-content;
@@ -76,8 +76,9 @@ export const TimerInSpace = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+  top: 25.4375rem;
   & div {
-    top: 25.4375rem;
     max-width: fit-content;
 
     & span {
@@ -86,4 +87,16 @@ export const TimerInSpace = styled.div`
       font-weight: 800;
     }
   }
+`;
+
+export const HeroDescriptionContainer = styled.section`
+  position: relative;
+  max-width: 20.4375rem;
+  margin: 0 auto;
+`;
+
+export const HeroDescription = styled.h1`
+  color: var(--hero-text-color);
+  line-height: 1.625;
+  font-weight: 500;
 `;
