@@ -79,7 +79,7 @@ export const TimerInSpace = styled.div`
   & div {
     top: 25.4375rem;
     max-width: fit-content;
-    /* left: 50%; */
+
     & span {
       padding: 19px 0 0 44px;
       letter-spacing: 0.5rem;
