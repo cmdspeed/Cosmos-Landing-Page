@@ -9,11 +9,13 @@ import {
   TimerInSpace,
   HeroDescriptionContainer,
   HeroDescription,
+  ButtonWrapper,
 } from "./Hero.styled";
 import { Diagram } from "./Diagram/Diagram";
 
 import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
 import spacegirlx2 from "../../assets/images/Hero/space-girl@x2.png";
+import { Button } from "../Button/Button";
 
 export const Hero = () => {
   return (
@@ -66,6 +68,9 @@ export const Hero = () => {
           join us on a journey to the furthest reaches of the cosmos.
         </HeroDescription>
       </HeroDescriptionContainer>
+      <ButtonWrapper>
+        <Button>Get Started</Button>
+      </ButtonWrapper>
     </>
   );
 };

@@ -100,3 +100,7 @@ export const HeroDescription = styled.h1`
   line-height: 1.625;
   font-weight: 500;
 `;
+
+export const ButtonWrapper = styled.div`
+  margin: 1.5rem 1.5rem;
+`;
