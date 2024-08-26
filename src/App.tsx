@@ -1,13 +1,15 @@
-import { HeaderWrapper } from "./App.styled";
-import { Header } from "./components/Header/Header";
-import { Hero } from "./components/Hero/Hero";
+import React, { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+
+const HomePage = lazy(() => import("./pages/Home"));
 
 function App() {
   return (
-    <HeaderWrapper>
-      <Header />
-      <Hero />
-    </HeaderWrapper>
+    <Suspense fallback={<div>LOADING</div>}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Suspense>
   );
 }
 

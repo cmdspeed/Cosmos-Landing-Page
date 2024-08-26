@@ -16,8 +16,13 @@ import { Diagram } from "./Diagram/Diagram";
 import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
 import spacegirlx2 from "../../assets/images/Hero/space-girl@x2.png";
 import { Button } from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const handleClick = () => {
+    const navigate = useNavigate();
+    navigate("/home");
+  };
   return (
     <>
       <HeroContainer>
@@ -53,7 +58,7 @@ export const Hero = () => {
           <Diagram
             svgTitle="#timeIcon"
             title="Total time in space "
-            bgColor="--bg-color-diagram"
+            bgcolor="--bg-color-diagram"
           >
             <span> 352D 5H 49M 20S</span>
           </Diagram>
@@ -69,7 +74,7 @@ export const Hero = () => {
         </HeroDescription>
       </HeroDescriptionContainer>
       <ButtonWrapper>
-        <Button>Get Started</Button>
+        <Button onClick={handleClick}>Get Started</Button>
       </ButtonWrapper>
     </>
   );

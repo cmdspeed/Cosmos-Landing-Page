@@ -20,7 +20,7 @@ interface DiagramProps {
   svgTitle: string;
   graph?: GraphProps[];
   children?: React.ReactNode;
-  bgColor?: string;
+  bgcolor?: string;
 }
 
 export const Diagram = ({
@@ -28,12 +28,10 @@ export const Diagram = ({
   title,
   graph,
   children,
-  bgColor,
+  bgcolor,
 }: DiagramProps) => {
-  console.log(graph);
-
   return (
-    <DiagramWrapper bgColor={bgColor}>
+    <DiagramWrapper bgcolor={bgcolor}>
       <DiagramElement>
         <DiagramSvg>
           <use href={`${icon}${svgTitle}`} />

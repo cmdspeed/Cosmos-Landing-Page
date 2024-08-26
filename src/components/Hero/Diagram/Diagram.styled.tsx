@@ -25,14 +25,14 @@ export const GraphSvg = styled.svg`
   }
 `;
 interface DiagramWrapperProps {
-  bgColor?: string;
+  bgcolor?: string;
 }
 
 export const DiagramWrapper = styled.div<DiagramWrapperProps>`
-  background-color: ${({ bgColor }) =>
-    bgColor ? `var(${bgColor})` : `var(--main-text-color)`};
-  color: ${({ bgColor }) =>
-    bgColor ? "var(--main-text-color)" : "var(--dark-text-color)"};
+  background-color: ${({ bgcolor }) =>
+    bgcolor ? `var(${bgcolor})` : `var(--main-text-color)`};
+  color: ${({ bgcolor }) =>
+    bgcolor ? "var(--main-text-color)" : "var(--dark-text-color)"};
 
   max-width: 10.75rem;
   height: fit-content;
