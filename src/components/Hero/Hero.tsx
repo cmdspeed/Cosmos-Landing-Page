@@ -19,9 +19,10 @@ import { Button } from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   const handleClick = () => {
-    const navigate = useNavigate();
-    navigate("/home");
+    navigate("/getStarted");
   };
   return (
     <>

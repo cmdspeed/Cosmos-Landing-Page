@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Cosmos-Landing-Page">
+    <BrowserRouter basename="/Cosmos-Landing-Page/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
