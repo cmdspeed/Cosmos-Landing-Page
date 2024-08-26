@@ -18,31 +18,41 @@ interface GraphProps {
 interface DiagramProps {
   title: string;
   svgTitle: string;
-  graph: GraphProps[];
+  graph?: GraphProps[];
+  children?: React.ReactNode;
+  bgcolor?: string;
 }
 
-export const Diagram = ({ svgTitle, title, graph }: DiagramProps) => {
-  console.log(graph);
-
+export const Diagram = ({
+  svgTitle,
+  title,
+  graph,
+  children,
+  bgcolor,
+}: DiagramProps) => {
   return (
-    <DiagramWrapper>
+    <DiagramWrapper bgcolor={bgcolor}>
       <DiagramElement>
         <DiagramSvg>
           <use href={`${icon}${svgTitle}`} />
         </DiagramSvg>
         <DiagramTitle>{title}</DiagramTitle>
       </DiagramElement>
-      <GraphWrapper>
-        {graph.map((graph) => (
-          <GraphSvg
-            key={graph.iconName}
-            width={graph.width}
-            height={graph.height}
-          >
-            <use href={`${icon}#${graph.iconName}`} />
-          </GraphSvg>
-        ))}
-      </GraphWrapper>
+      {graph ? (
+        <GraphWrapper>
+          {graph.map((graph) => (
+            <GraphSvg
+              key={graph.iconName}
+              width={graph.width}
+              height={graph.height}
+            >
+              <use href={`${icon}#${graph.iconName}`} />
+            </GraphSvg>
+          ))}
+        </GraphWrapper>
+      ) : (
+        children
+      )}
     </DiagramWrapper>
   );
 };
