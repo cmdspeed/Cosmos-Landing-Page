@@ -9,9 +9,14 @@ import {
   TimerInSpace,
   HeroDescriptionContainer,
   HeroDescription,
-  ButtonWrapper,
+  GetStarted,
+  StyledLinkWatchVideo,
+  PlaySvgContainer,
+  PlayContainer,
+  BtnWrapper,
 } from "./Hero.styled";
 import { Diagram } from "./Diagram/Diagram";
+import icon from "../../assets/icon/icon.svg";
 
 import spacegirlx1 from "../../assets/images/Hero/space-girl@x1.png";
 import spacegirlx2 from "../../assets/images/Hero/space-girl@x2.png";
@@ -74,9 +79,25 @@ export const Hero = () => {
           join us on a journey to the furthest reaches of the cosmos.
         </HeroDescription>
       </HeroDescriptionContainer>
-      <ButtonWrapper>
-        <Button onClick={handleClick}>Get Started</Button>
-      </ButtonWrapper>
+      <BtnWrapper>
+        <GetStarted>
+          <Button onClick={handleClick}>Get Started</Button>
+        </GetStarted>
+        <div>
+          <StyledLinkWatchVideo
+            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch Video
+            <PlayContainer>
+              <PlaySvgContainer>
+                <use href={`${icon}#play`} />
+              </PlaySvgContainer>
+            </PlayContainer>
+          </StyledLinkWatchVideo>
+        </div>
+      </BtnWrapper>
     </>
   );
 };

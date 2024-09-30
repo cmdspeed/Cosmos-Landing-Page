@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import herobgx1 from "../../assets/images/Hero/herobg@x1.jpg";
 import herobgx2 from "../../assets/images/Hero/herobg@x2.jpg";
+import { NavLink } from "react-router-dom";
 
 export const HeroContainer = styled.section`
   margin: 1.625rem auto 18.5rem;
@@ -101,6 +102,38 @@ export const HeroDescription = styled.h1`
   font-weight: 500;
 `;
 
-export const ButtonWrapper = styled.div`
-  margin: 1.5rem 1.5rem;
+export const GetStarted = styled.div`
+  margin-top: 1.5rem;
+`;
+
+export const StyledLinkWatchVideo = styled(NavLink)`
+  color: var(--dark-text-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 2.4375rem;
+  transition: opacity 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+`;
+
+export const PlayContainer = styled.div`
+  margin-left: 0.75rem;
+`;
+
+export const PlaySvgContainer = styled.svg`
+  background-color: var(--diagram-color);
+  padding: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+`;
+
+export const BtnWrapper = styled.div`
+  padding: 0 1.5rem;
 `;
