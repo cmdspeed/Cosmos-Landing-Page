@@ -26,7 +26,7 @@ export const Footer = () => {
         </ListItem>
         <ListItem>
           <StyledEmailLink to="mailto:contact@odyssey.com">
-            [contact@odyssey.com].
+            [contact@odyssey.com]
           </StyledEmailLink>
         </ListItem>
       </StyledList>
