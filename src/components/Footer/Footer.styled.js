@@ -4,6 +4,7 @@ import { laptopView } from "../../helpers/resposive-views";
 
 export const FooterWrapper = styled.div`
   padding: 2rem 0 2.125rem 1.5rem;
+  text-align: center;
 `;
 
 export const StyledLink = styled(NavLink)`

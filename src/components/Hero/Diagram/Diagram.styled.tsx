@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptopView } from "../../../helpers/resposive-views";
+import { laptopView, pcView } from "../../../helpers/resposive-views";
 
 export const DiagramElement = styled.div`
   display: flex;
@@ -53,6 +53,10 @@ export const DiagramWrapper = styled.div<DiagramWrapperProps>`
   position: relative;
   @media screen and (min-width: ${laptopView}) {
     max-width: 15.93rem;
+    padding: 1.25rem;
+  }
+  @media screen and (min-width: ${pcView}) {
+    max-width: 21.06rem;
     padding: 1.25rem;
   }
 `;
