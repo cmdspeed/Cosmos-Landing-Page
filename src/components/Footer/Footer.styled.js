@@ -27,6 +27,7 @@ export const StyledEmailLink = styled(NavLink)`
 export const StyledList = styled.ul`
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  justify-content: center;
   @media screen and (min-width: ${laptopView}) {
     display: flex;
     flex-wrap: wrap;

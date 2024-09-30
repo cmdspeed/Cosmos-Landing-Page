@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { laptopView } from "../../helpers/resposive-views";
+import { laptopView, pcView } from "../../helpers/resposive-views";
 
 export const CompaniesContainer = styled.div`
   display: flex;
@@ -18,6 +18,10 @@ export const CompaniesContainer = styled.div`
   }
   @media screen and (min-width: ${laptopView}) {
     gap: 5.625rem;
+  }
+  @media screen and (min-width: ${pcView}) {
+    gap: 15.3125rem;
+    margin-top: 7.4375rem;
   }
 `;
 

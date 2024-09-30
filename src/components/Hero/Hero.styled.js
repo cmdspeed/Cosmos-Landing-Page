@@ -230,6 +230,7 @@ export const BtnWrapper = styled.div`
   }
   @media screen and (min-width: ${laptopView}) {
     margin-top: 2rem;
+    justify-content: left;
   }
   @media screen and (min-width: ${pcView}) {
     margin-left: 7.5rem;
