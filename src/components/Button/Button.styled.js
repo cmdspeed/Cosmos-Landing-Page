@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { pcView } from "../../helpers/resposive-views";
 
 export const ButtonWrapper = styled.div``;
 
@@ -13,5 +14,8 @@ export const ButtonStyled = styled.button`
   transition: background-color 0.3s ease;
   &:hover {
     background-color: var(--diagram-color);
+  }
+  @media screen and(min-width: ${pcView}) {
+    font-size: 1.5rem;
   }
 `;
