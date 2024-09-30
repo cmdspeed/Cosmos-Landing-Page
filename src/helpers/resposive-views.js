@@ -3,6 +3,9 @@ export const mobileView = () => {
 };
 
 export const tabletView = () => {
+  return 768 + "px";
+};
+export const laptopView = () => {
   return 1024 + "px";
 };
 

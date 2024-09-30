@@ -2,6 +2,7 @@ import styled from "styled-components";
 import herobgx1 from "../../assets/images/Hero/herobg@x1.jpg";
 import herobgx2 from "../../assets/images/Hero/herobg@x2.jpg";
 import { NavLink } from "react-router-dom";
+import { laptopView, tabletView } from "../../helpers/resposive-views";
 
 export const HeroContainer = styled.section`
   margin: 1.625rem auto 18.5rem;
@@ -22,6 +23,11 @@ export const HeroContainer = styled.section`
     only screen and (min-resolution: 2dppx) {
     background-image: url(${herobgx2});
   }
+  @media screen and (min-width: ${laptopView}) {
+    margin: 3.125rem auto 1.5rem;
+    max-width: 59.1875rem;
+    border-radius: 2.5rem;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -32,8 +38,13 @@ export const HeroGirl = styled.img``;
 
 export const HeroTitle = styled.h1`
   font-size: 2rem;
-  max-width: 18.93rem;
+  max-width: 22rem;
+  font-weight: 800;
   padding: 2rem 3rem 1.5rem 1.5rem;
+  @media screen and (min-width: ${laptopView}) {
+    padding: 2.5rem 0 0 2.5rem;
+    font-size: 2.5rem;
+  }
 `;
 
 export const GirlShadow = styled.div`
@@ -55,13 +66,18 @@ export const GirlContainer = styled.div`
 
   left: 50%;
   transform: translateX(-50%);
+
+  @media screen and (min-width: ${laptopView}) {
+    left: 59%;
+    top: 41.5%;
+    transform: translateY(-50%);
+  }
 `;
 
 export const DiagramContainer = styled.div`
   display: flex;
   margin: 8.1875rem auto;
   position: absolute;
-  display: flex;
 
   left: 0;
   right: 0;
@@ -70,6 +86,14 @@ export const DiagramContainer = styled.div`
   & > div:first-of-type {
     margin-top: 4.875rem;
     margin-right: 0.375rem;
+  }
+  @media screen and (min-width: ${laptopView}) {
+    left: 49%;
+    top: 20%;
+    & > div:first-of-type {
+      margin-top: 4.1875rem;
+      margin-right: 3rem;
+    }
   }
 `;
 
@@ -88,12 +112,21 @@ export const TimerInSpace = styled.div`
       font-weight: 800;
     }
   }
+  @media screen and (min-width: ${laptopView}) {
+    top: 20.3rem;
+    left: 77%;
+    transform: translateX(-50%);
+  }
 `;
 
 export const HeroDescriptionContainer = styled.section`
   position: relative;
   max-width: 20.4375rem;
   margin: 0 auto;
+  @media screen and (min-width: ${laptopView}) {
+    margin: 0 2.5rem;
+    max-width: 24.6875rem;
+  }
 `;
 
 export const HeroDescription = styled.h1`
@@ -104,6 +137,9 @@ export const HeroDescription = styled.h1`
 
 export const GetStarted = styled.div`
   margin-top: 1.5rem;
+  @media screen and (min-width: ${laptopView}) {
+    margin-top: 0;
+  }
 `;
 
 export const StyledLinkWatchVideo = styled(NavLink)`
@@ -119,6 +155,9 @@ export const StyledLinkWatchVideo = styled(NavLink)`
   &:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+  @media screen and (min-width: ${laptopView}) {
+    margin-top: 0;
   }
 `;
 
@@ -136,4 +175,9 @@ export const PlaySvgContainer = styled.svg`
 
 export const BtnWrapper = styled.div`
   padding: 0 1.5rem;
+  @media screen and (min-width: ${laptopView}) {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
 `;

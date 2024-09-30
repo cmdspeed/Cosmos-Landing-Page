@@ -79,24 +79,24 @@ export const Hero = () => {
           join us on a journey to the furthest reaches of the cosmos.
         </HeroDescription>
       </HeroDescriptionContainer>
+
       <BtnWrapper>
         <GetStarted>
           <Button onClick={handleClick}>Get Started</Button>
         </GetStarted>
-        <div>
-          <StyledLinkWatchVideo
-            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Watch Video
-            <PlayContainer>
-              <PlaySvgContainer>
-                <use href={`${icon}#play`} />
-              </PlaySvgContainer>
-            </PlayContainer>
-          </StyledLinkWatchVideo>
-        </div>
+
+        <StyledLinkWatchVideo
+          to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch Video
+          <PlayContainer>
+            <PlaySvgContainer>
+              <use href={`${icon}#play`} />
+            </PlaySvgContainer>
+          </PlayContainer>
+        </StyledLinkWatchVideo>
       </BtnWrapper>
     </>
   );
