@@ -21,3 +21,7 @@ export const StyledEmailLink = styled(NavLink)`
   font-weight: 600;
   text-decoration: underline;
 `;
+
+export const StyledList = styled.ul`
+  margin-top: 2rem;
+`;

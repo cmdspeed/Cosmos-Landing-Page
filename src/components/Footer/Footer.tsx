@@ -4,13 +4,14 @@ import {
   ListItem,
   StyledEmailLink,
   StyledLink,
+  StyledList,
 } from "./Footer.styled";
 
 export const Footer = () => {
   return (
     <FooterWrapper>
       <Logo width={9.61} height={1.5} />
-      <ul>
+      <StyledList>
         <ListItem>
           <StyledLink to="/">Stay Connected</StyledLink>
         </ListItem>
@@ -28,7 +29,7 @@ export const Footer = () => {
             [contact@odyssey.com].
           </StyledEmailLink>
         </ListItem>
-      </ul>
+      </StyledList>
     </FooterWrapper>
   );
 };
