@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { laptopView } from "../../../helpers/resposive-views";
 
 export const DiagramElement = styled.div`
   display: flex;
@@ -12,10 +13,18 @@ export const DiagramSvg = styled.svg`
   height: 2rem;
   padding: 0.5rem;
   border-radius: 0.75rem;
+  @media screen and (min-width: ${laptopView}) {
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `;
 export const DiagramTitle = styled.h1`
   margin-left: 0.75rem;
   font-size: 0.875rem;
+  @media screen and (min-width: ${laptopView}) {
+    font-size: 1.125rem;
+  }
 `;
 
 export const GraphSvg = styled.svg`
@@ -42,6 +51,10 @@ export const DiagramWrapper = styled.div<DiagramWrapperProps>`
   padding: 0.67rem;
 
   position: relative;
+  @media screen and (min-width: ${laptopView}) {
+    max-width: 15.93rem;
+    padding: 1.25rem;
+  }
 `;
 
 export const GraphWrapper = styled.div`
