@@ -88,8 +88,8 @@ export const DiagramContainer = styled.div`
     margin-right: 0.375rem;
   }
   @media screen and (min-width: ${laptopView}) {
-    left: 49%;
-    top: 20%;
+    left: 31rem;
+    top: 13rem;
     & > div:first-of-type {
       margin-top: 4.1875rem;
       margin-right: 3rem;
@@ -116,6 +116,7 @@ export const TimerInSpace = styled.div`
     top: 20.3rem;
     left: 77%;
     transform: translateX(-50%);
+    max-width: 25.5rem;
   }
 `;
 
