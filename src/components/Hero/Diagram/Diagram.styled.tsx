@@ -39,7 +39,7 @@ export const DiagramWrapper = styled.div<DiagramWrapperProps>`
 
   border-radius: 1.5rem;
 
-  padding: 0.75rem;
+  padding: 0.67rem;
 
   position: relative;
 `;
