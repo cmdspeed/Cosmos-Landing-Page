@@ -24,12 +24,10 @@ export const Footer = () => {
         <ListItem>
           <StyledLink to="/">About Us</StyledLink>
         </ListItem>
-        <ListItem>
-          <StyledEmailLink to="mailto:contact@odyssey.com">
-            [contact@odyssey.com]
-          </StyledEmailLink>
-        </ListItem>
       </StyledList>
+      <StyledEmailLink to="mailto:contact@odyssey.com">
+        [contact@odyssey.com]
+      </StyledEmailLink>
     </FooterWrapper>
   );
 };
