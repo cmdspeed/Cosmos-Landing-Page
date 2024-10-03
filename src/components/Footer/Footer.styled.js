@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { laptopView } from "../../helpers/resposive-views";
 
-export const FooterWrapper = styled.div`
+export const FooterWrapper = styled.footer`
   padding: 2rem 0 2.125rem 1.5rem;
   text-align: center;
 `;
