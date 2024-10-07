@@ -16,6 +16,7 @@ export const StyledTile = styled.h2`
 `;
 
 export const StyledParagraph = styled.p`
+  font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.71;
   color: var(--hero-text-color);
