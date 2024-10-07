@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const MainHeader = styled.h1`
+export const MainHeading = styled.h1`
   font-weight: 800;
   font-size: 2rem;
   color: var(--btn-bg-color);

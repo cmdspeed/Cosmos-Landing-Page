@@ -1,13 +1,13 @@
 import { MainCard } from "./MainCard";
-import { MainHeader, StyledList, StyledSection } from "./MainSection.styled";
+import { MainHeading, StyledList, StyledSection } from "./MainSection.styled";
 
 export const MainSection = () => {
   return (
     <main>
       <StyledSection>
-        <MainHeader>
+        <MainHeading>
           Join our vibrant community of space enthusiasts where you can
-        </MainHeader>
+        </MainHeading>
         <StyledList>
           <li>
             <MainCard
