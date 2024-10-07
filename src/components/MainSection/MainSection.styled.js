@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptopView, tabletView } from "../../helpers/resposive-views";
+import { laptopView, pcView, tabletView } from "../../helpers/resposive-views";
 
 export const MainHeading = styled.h1`
   font-weight: 800;
@@ -11,6 +11,10 @@ export const MainHeading = styled.h1`
     max-width: 23.4375rem;
     margin-top: 1rem;
   }
+  @media screen and (min-width: ${pcView}) {
+    font-size: 4rem;
+    max-width: 35.8125rem;
+  }
 `;
 
 export const StyledSection = styled.section`
@@ -18,6 +22,11 @@ export const StyledSection = styled.section`
   padding: 0 1.5rem;
   @media screen and (min-width: ${laptopView}) {
     display: flex;
+    gap: 1rem;
+  }
+  @media screen and (min-width: ${pcView}) {
+    display: flex;
+    gap: 15.5rem;
   }
 `;
 
@@ -32,10 +41,16 @@ export const StyledList = styled.ul`
   @media screen and (min-width: ${laptopView}) {
     margin-top: 0;
   }
+  @media screen and (min-width: ${pcView}) {
+    gap: 6.5rem;
+  }
 `;
 
 export const StyledListItem = styled.li`
   @media screen and (min-width: ${tabletView}) {
     max-width: 15.75rem;
+  }
+  @media screen and (min-width: ${pcView}) {
+    max-width: 21rem;
   }
 `;
